@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 /* Navbar Styles */
@@ -42,33 +43,154 @@ body {
     transform: scale(1.1); /* Slightly enlarge the link */
 }
 
-/* Section Styles to create space for scrolling */
-section {
+/* Hero Section */
+.hero {
     height: 100vh;
-    padding-top: 70px;
+    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 30px;
+    color: #fff;
 }
 
-/* Add some style to the sections */
-#home {
-    background-color: #f0f0f0;
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
-#about {
-    background-color: #e0e0e0;
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
-#services {
-    background-color: #d0d0d0;
+.cta-btn {
+    padding: 10px 30px;
+    background-color: #FFD700;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
 }
 
-#portfolio {
-    background-color: #c0c0c0;
+.cta-btn:hover {
+    background-color: #FF8C00;
 }
 
-#contact {
-    background-color: #b0b0b0;
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio .cta-btn {
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: #FFD700;
+    color: #333;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #FF8C00;
 }
 
 /* Scroll effect styles */
