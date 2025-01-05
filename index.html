@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Tech Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,6 +14,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#blog">Blog</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#resources">Resources</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -21,27 +23,72 @@
 
     <section id="home">
         <h1>Welcome to the Interactive Tech Hub</h1>
-        <p>Your go-to place for tech insights, blog posts, and resources.</p>
+        <p>Your go-to place for tech insights, blog posts, product reviews, and resources to stay ahead in the tech world.</p>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>We share valuable content about technology, innovation, and productivity tools to help you stay on top of the game.</p>
+        <p>We are a team of passionate tech enthusiasts dedicated to bringing you the latest in technology, innovation, and productivity tools. Our goal is to help you stay ahead of the curve with curated articles, reviews, and guides.</p>
     </section>
 
     <section id="blog">
         <h2>Blog</h2>
-        <p>Discover the latest articles and trends in tech, AI, and productivity.</p>
+        <div class="blog-posts">
+            <div class="post">
+                <h3>The Future of AI in 2025</h3>
+                <p>AI is rapidly evolving and will have a massive impact on industries like healthcare, finance, and entertainment. In this article, we explore the trends shaping AI and what to expect in the near future.</p>
+            </div>
+            <div class="post">
+                <h3>Top 5 Productivity Tools for Remote Work</h3>
+                <p>In a world that’s shifting to remote work, it’s important to have the right tools. These five tools will help you stay productive, organized, and efficient in a virtual workspace.</p>
+            </div>
+            <div class="post">
+                <h3>Exploring the Potential of 5G</h3>
+                <p>5G technology promises faster internet speeds and low latency, transforming everything from smartphones to autonomous vehicles. We break down the current state of 5G and what it means for consumers and businesses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Product Reviews</h2>
+        <div class="reviews">
+            <div class="review">
+                <h3>MacBook Pro M1 (2023)</h3>
+                <p>The new MacBook Pro with Apple's M1 chip delivers performance that outperforms most of its competitors. We dive into its features, pros, cons, and whether it's worth the investment for professionals.</p>
+                <a href="#" class="read-more">Read Full Review</a>
+            </div>
+            <div class="review">
+                <h3>Fitbit Charge 5</h3>
+                <p>Fitbit’s latest wearable offers a sleek design, impressive health tracking features, and improved battery life. Here’s our in-depth look at how it compares to other fitness trackers on the market.</p>
+                <a href="#" class="read-more">Read Full Review</a>
+            </div>
+            <div class="review">
+                <h3>Google Pixel 7 Pro</h3>
+                <p>The Google Pixel 7 Pro offers a fantastic camera experience and smooth performance. Our review covers the camera’s capabilities, battery life, and how it holds up against other flagship devices.</p>
+                <a href="#" class="read-more">Read Full Review</a>
+            </div>
+        </div>
     </section>
 
     <section id="resources">
         <h2>Resources</h2>
-        <p>Explore our curated collection of tech resources, tutorials, and product reviews.</p>
+        <p>We’ve curated some amazing resources to help you learn more about tech, innovation, and productivity:</p>
+        <ul class="resource-links">
+            <li><a href="#" class="resource-btn">Tech Tutorials</a></li>
+            <li><a href="#" class="resource-btn">Latest Tech News</a></li>
+            <li><a href="#" class="resource-btn">Productivity Tips</a></li>
+            <li><a href="#" class="resource-btn">Coding Resources</a></li>
+        </ul>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Get in touch with us for collaboration, feedback, or inquiries.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
