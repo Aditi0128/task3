@@ -2,6 +2,19 @@
 const navbar = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.navbar ul li a');
 
+// Smooth scrolling for anchor links
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        targetElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 // Change navbar style when scrolled
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -9,14 +22,4 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('scrolled');
     }
-});
-
-// Change color of links on hover
-navLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        link.style.color = '#FFD700'; // Gold on hover
-    });
-    link.addEventListener('mouseout', () => {
-        link.style.color = '#fff'; // Reset color
-    });
 });
