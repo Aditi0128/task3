@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Navigation</title>
+    <title>Photography Adventures</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,12 +19,69 @@
         </nav>
     </header>
 
-    <!-- Sample content to show scrolling effect -->
-    <section id="home"><h1>Welcome to Our Photography Website</h1></section>
-    <section id="about"><h1>About Us</h1></section>
-    <section id="services"><h1>Our Services</h1></section>
-    <section id="portfolio"><h1>Our Portfolio</h1></section>
-    <section id="contact"><h1>Contact Us</h1></section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Capture the Moments</h1>
+            <p>Photography that tells stories from around the world</p>
+            <a href="#portfolio" class="cta-btn">Explore Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate photographers who travel the world to capture stunning moments.</p>
+        <img src="https://via.placeholder.com/600x400" alt="Photography Adventure">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Wedding Photography</h3>
+                <p>Capture your special day with beautiful, high-quality photos.</p>
+            </div>
+            <div class="service-card">
+                <h3>Travel Photography</h3>
+                <p>We travel to remote places and capture breathtaking landscapes.</p>
+            </div>
+            <div class="service-card">
+                <h3>Event Photography</h3>
+                <p>We cover corporate events, parties, and everything in between.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="Portfolio Image 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="Portfolio Image 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="Portfolio Image 3">
+            </div>
+        </div>
+        <a href="#" class="cta-btn">View More</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out for booking, inquiries, or collaborations.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
 
     <script src="script.js"></script>
 </body>
