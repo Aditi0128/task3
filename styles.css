@@ -1,10 +1,13 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 /* Navbar Styles */
@@ -16,6 +19,7 @@ body {
     padding: 15px 20px;
     z-index: 1000;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar ul {
@@ -35,6 +39,8 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -43,158 +49,65 @@ body {
     transform: scale(1.1); /* Slightly enlarge the link */
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Section Styling */
+section {
+    padding: 100px 20px;
     text-align: center;
+    color: #333;
+}
+
+#home {
+    background: linear-gradient(to right, #FF7F50, #FFD700);
     color: #fff;
 }
 
-.hero h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.cta-btn {
-    padding: 10px 30px;
-    background-color: #FFD700;
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #FF8C00;
-}
-
-/* About Section */
-.about {
-    padding: 50px;
-    text-align: center;
+#about {
     background-color: #fff;
 }
 
-.about img {
-    width: 80%;
-    max-width: 600px;
+#blog, #resources, #contact {
+    background-color: #f7f7f7;
+}
+
+h1 {
+    font-size: 50px;
     margin-top: 20px;
-    border-radius: 10px;
 }
 
-/* Services Section */
-.services {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.services h2 {
-    margin-bottom: 30px;
+h2 {
     font-size: 36px;
-    color: #333;
+    margin-top: 40px;
 }
 
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.service-card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Scroll and Hover Effects */
+.navbar.scrolled {
+    background-color: #444; /* Darker background on scroll */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.navbar.scrolled ul li a {
+    color: #FFD700;
 }
 
-/* Portfolio Section */
-.portfolio {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.portfolio-gallery {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item img:hover {
-    transform: scale(1.05);
-}
-
-.portfolio .cta-btn {
-    margin-top: 20px;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
-.contact button {
-    padding: 15px;
-    background-color: #FFD700;
-    color: #333;
-    font-weight: bold;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
+/* Transition for Sections */
+section {
     transition: background-color 0.3s ease;
 }
 
-.contact button:hover {
-    background-color: #FF8C00;
-}
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
 
-/* Scroll effect styles */
-.scrolled {
-    background-color: #111; /* Darker background when scrolled */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    .navbar ul li {
+        margin: 10px 0;
+    }
 }
