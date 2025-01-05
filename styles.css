@@ -1,0 +1,78 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+/* Section Styles to create space for scrolling */
+section {
+    height: 100vh;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Add some style to the sections */
+#home {
+    background-color: #f0f0f0;
+}
+
+#about {
+    background-color: #e0e0e0;
+}
+
+#services {
+    background-color: #d0d0d0;
+}
+
+#portfolio {
+    background-color: #c0c0c0;
+}
+
+#contact {
+    background-color: #b0b0b0;
+}
+
+/* Scroll effect styles */
+.scrolled {
+    background-color: #111; /* Darker background when scrolled */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
